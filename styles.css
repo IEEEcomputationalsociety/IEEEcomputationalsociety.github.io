@@ -1,0 +1,156 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .box {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .left-box {
+      background-color: #000;
+      width: 20%;
+    }
+
+
+
+
+
+    .middle-box {
+        display: flex;
+        flex-direction: column;
+        background-color: #020202;
+        width: 60%;
+        position: relative;
+      }
+  
+      .middle-box .top-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        background-color: #05050533;
+      }
+  
+      .middle-box .top-div img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+  
+      .middle-box .middle-div {
+        position: relative;
+        height: 62%; /* Increased by 50% */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .home_bgcircle1__MiYGt {
+        position: relative;
+        width: 370px; /* Increased radius */
+        height: 370px; /* Increased radius */
+        border: 2px solid white;
+        border-radius: 50%;
+        animation: rotate 4s linear infinite;
+      }
+  
+      .home_bgcircle1__MiYGt::before,
+      .home_bgcircle1__MiYGt::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 50%;
+      }
+  
+      .home_bgcircle1__MiYGt::before {
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+  
+      .home_bgcircle1__MiYGt::after {
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+  
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+  
+      .middle-box .bottom-div {
+        position: absolute;
+        top: 73%; /* Positioned to lie over the middle div */
+        left: 55%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .middle-box .bottom-div img {
+        width: 370px; /* Adjust the width here */
+        height: auto; /* Maintains aspect ratio */
+      }
+  
+
+
+
+
+
+
+
+
+
+
+
+    .right-box {
+      background-color: #000;
+      width: 20%;
+    }
+
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
